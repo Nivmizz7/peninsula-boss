@@ -206,4 +206,16 @@ end)
 -- Initial update
 UpdateBossList()
 
+-- Slash command to toggle frame
+SLASH_PENINSULABOSS1 = "/pboss"
+SLASH_PENINSULABOSS2 = "/peninsulaboss"
+SlashCmdList["PENINSULABOSS"] = function(msg)
+    if frame:IsShown() then
+        frame:Hide()
+    else
+        frame:Show()
+        UpdateBossList()
+    end
+end
+
 frame:Show()

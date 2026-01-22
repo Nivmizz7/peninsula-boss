@@ -100,53 +100,53 @@ local bossData = {
     -- ==================
     -- THE BURNING CRUSADE DUNGEONS
     -- ==================
-    ["Hellfire Ramparts"] = {
-        "Watchkeeper Gargolmar", "Omor the Unscarred", "Vazruden & Nazan"
+    ["Remparts des Flammes infernales"] = {
+        "Gardien de guerre Gargolmar", "Omor le Balafré", "Vazruden et Nazan"
     },
-    ["The Blood Furnace"] = {
-        "The Maker", "Broggok", "Keli'dan the Breaker"
+    ["La Fournaise du sang"] = {
+        "Le Faiseur", "Broggok", "Keli'dan le Briseur"
     },
-    ["The Slave Pens"] = {
-        "Mennu the Betrayer", "Rokmar the Crackler", "Quagmirran"
+    ["Les enclos aux esclaves"] = {
+        "Mennu le Traître", "Rokmar le Crépitant", "Quagmirran"
     },
-    ["The Underbog"] = {
-        "Hungarfen", "Ghaz'an", "Swamplord Musel'ek", "The Black Stalker"
+    ["La Basse-tourbière"] = {
+        "Hungarfen", "Ghaz'an", "Seigneur des marais Musel'ek", "Le Traqueur noir"
     },
-    ["Mana-Tombs"] = {
-        "Pandemonius", "Tavarok", "Nexus-Prince Shaffar", "Yor"
+    ["Tombes-mana"] = {
+        "Pandemonius", "Tavarok", "Prince-nexus Shaffar", "Yor"
     },
-    ["Auchenai Crypts"] = {
-        "Shirrak the Dead Watcher", "Exarch Maladaar"
+    ["Les cryptes Auchenaï"] = {
+        "Shirrak le Veillemort", "Exarque Maladaar"
     },
-    ["Sethekk Halls"] = {
-        "Darkweaver Syth", "Anzu", "Talon King Ikiss"
+    ["Les salles des Sethekk"] = {
+        "Tisserand noir Syth", "Anzu", "Roi-serre Ikiss"
     },
-    ["Shadow Labyrinth"] = {
-        "Ambassador Hellmaw", "Blackheart the Inciter", "Grandmaster Vorpil", "Murmur"
+    ["Le labyrinthe des ombres"] = {
+        "Ambassadeur Gueule-d'enfer", "Cœur-noir l'Incitateur", "Grand maître Vorpil", "Murmure"
     },
-    ["The Shattered Halls"] = {
-        "Grand Warlock Nethekurse", "Blood Guard Porung", "Warbringer O'mrogg", "Warchief Kargath Bladefist"
+    ["Les salles Brisées"] = {
+        "Grand démoniste Néantkurse", "Garde de sang Porung", "Porteguerre O'mrogg", "Chef de guerre Kargath Lamepoing"
     },
-    ["The Steamvault"] = {
-        "Hydromancer Thespia", "Mekgineer Steamrigger", "Warlord Kalithresh"
+    ["Le Caveau de la vapeur"] = {
+        "Hydromancienne Thespia", "Mékgénieur Thermojoncteur", "Seigneur de guerre Kalithresh"
     },
-    ["The Botanica"] = {
-        "Commander Sarannis", "High Botanist Freywinn", "Thorngrin the Tender", "Laj", "Warp Splinter"
+    ["La Botanica"] = {
+        "Commandant Sarannis", "Grand botaniste Freywinn", "Thorngrin le Dompteur", "Laj", "Brise-dimension"
     },
-    ["The Mechanar"] = {
-        "Gatewatcher Gyro-Kill", "Gatewatcher Iron-Hand", "Mechano-Lord Capacitus", "Nethermancer Sepethrea", "Pathaleon the Calculator"
+    ["Le Méchanar"] = {
+        "Guette-porte Gyro-Meurtre", "Guette-porte Main-de-fer", "Mécano-Seigneur Capacitus", "Abimagus Sepethrea", "Pathaleon le Calculateur"
     },
-    ["The Arcatraz"] = {
-        "Zereketh the Unbound", "Dalliah the Doomsayer", "Wrath-Scryer Soccothrates", "Harbinger Skyriss"
+    ["L'Arcatraz"] = {
+        "Zereketh le Délié", "Dalliah l'Apocalypse", "Scrute-courroux Soccothrates", "Messager Skyriss"
     },
-    ["Old Hillsbrad Foothills"] = {
-        "Lieutenant Drake", "Captain Skarloc", "Epoch Hunter"
+    ["Contreforts de Hautebrande d'antan"] = {
+        "Lieutenant Drake", "Capitaine Skarloc", "Chasseur d'Époques"
     },
-    ["The Black Morass"] = {
-        "Chrono Lord Deja", "Temporus", "Aeonus"
+    ["Le Noir Marécage"] = {
+        "Chronoseigneur Déjà", "Temporus", "Aeonus"
     },
-    ["Magisters' Terrace"] = {
-        "Selin Fireheart", "Vexallus", "Priestess Delrissa", "Kael'thas Sunstrider"
+    ["Terrasse des Magistères"] = {
+        "Selin Cœur-de-feu", "Vexallus", "Prêtresse Delrissa", "Kael'thas Haut-soleil"
     },
     
     -- ==================

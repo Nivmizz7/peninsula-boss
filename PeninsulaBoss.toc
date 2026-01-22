@@ -1,7 +1,7 @@
 ## Interface: 30300
 ## Title: Peninsula Boss
 ## Notes: Displays raid and dungeon bosses for the current instance
-## Author: Eliot
+## Author: Nivmizz7
 ## Version: 1.0
 ## SavedVariables: PeninsulaBossDB
 

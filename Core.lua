@@ -199,53 +199,53 @@ local bossData = {
     -- ==================
     -- WRATH OF THE LICH KING DUNGEONS
     -- ==================
-    ["Utgarde Keep"] = {
-        "Prince Keleseth", "Skarvald & Dalronn", "Ingvar the Plunderer"
+    ["Forteresse d'Utgarde"] = {
+        "Prince Keleseth", "Skarvald et Dalronn", "Ingvar le Pilleur"
     },
-    ["The Nexus"] = {
-        "Grand Magus Telestra", "Anomalus", "Ormorok the Tree-Shaper", "Keristrasza"
+    ["Le Nexus"] = {
+        "Grand magus Telestra", "Anomalus", "Ormorok le Sculpte-arbre", "Keristrasza"
     },
-    ["Azjol-Nerub"] = {
-        "Krik'thir the Gatewatcher", "Hadronox", "Anub'arak"
+    ["Azjol-Nérub"] = {
+        "Krik'thir le Gardien de porte", "Hadronox", "Anub'arak"
     },
-    ["Ahn'kahet: The Old Kingdom"] = {
-        "Elder Nadox", "Prince Taldaram", "Jedoga Shadowseeker", "Herald Volazj"
+    ["Ahn'kahet : l'Ancien royaume"] = {
+        "Ancien Nadox", "Prince Taldaram", "Jedoga Cherchelombre", "Héraut Volazj"
     },
-    ["Drak'Tharon Keep"] = {
-        "Trollgore", "Novos the Summoner", "King Dred", "The Prophet Tharon'ja"
+    ["Donjon de Drak'Tharon"] = {
+        "Trollétripe", "Novos l'Invocateur", "Roi Dred", "Le prophète Tharon'ja"
     },
-    ["The Violet Hold"] = {
-        "Erekem", "Moragg", "Ichoron", "Xevozz", "Lavanthor", "Zuramat the Obliterator", "Cyanigosa"
+    ["Le fort Pourpre"] = {
+        "Erekem", "Moragg", "Ichoron", "Xevozz", "Lavanthor", "Zuramat l'Anéantisseur", "Cyanigosa"
     },
     ["Gundrak"] = {
-        "Slad'ran", "Drakkari Colossus", "Moorabi", "Eck the Ferocious", "Gal'darah"
+        "Slad'ran", "Colosse drakkari", "Moorabi", "Eck le Féroce", "Gal'darah"
     },
-    ["Halls of Stone"] = {
-        "Krystallus", "Maiden of Grief", "Tribunal of Ages", "Sjonnir the Ironshaper"
+    ["Les salles de Pierre"] = {
+        "Krystallus", "Vierge du chagrin", "Tribunal des âges", "Sjonnir le Sculptefer"
     },
-    ["Halls of Lightning"] = {
-        "General Bjarngrim", "Volkhan", "Ionar", "Loken"
+    ["Les salles de Foudre"] = {
+        "Général Bjarngrim", "Volkhan", "Ionar", "Loken"
     },
-    ["The Oculus"] = {
-        "Drakos the Interrogator", "Varos Cloudstrider", "Mage-Lord Urom", "Ley-Guardian Eregos"
+    ["L'Oculus"] = {
+        "Drakos l'Interrogateur", "Varos Marche-nuées", "Seigneur-mage Urom", "Gardien-tellurique Eregos"
     },
-    ["Utgarde Pinnacle"] = {
-        "Svala Sorrowgrave", "Gortok Palehoof", "Skadi the Ruthless", "King Ymiron"
+    ["Cime d'Utgarde"] = {
+        "Svala Tristetombe", "Gortok Pâle-sabot", "Skadi le Brutal", "Roi Ymiron"
     },
-    ["The Culling of Stratholme"] = {
-        "Meathook", "Salramm the Fleshcrafter", "Chrono-Lord Epoch", "Mal'Ganis"
+    ["L'Épuration de Stratholme"] = {
+        "Grancrochet", "Salramm le Façonneur de chairs", "Chronoseigneur Epoch", "Mal'Ganis"
     },
-    ["Trial of the Champion"] = {
-        "Grand Champions", "Eadric the Pure / Argent Confessor Paletress", "The Black Knight"
+    ["L'épreuve du champion"] = {
+        "Grands champions", "Eadric le Pur / Confesseur d'argent Paletress", "Le chevalier noir"
     },
-    ["The Forge of Souls"] = {
-        "Bronjahm", "Devourer of Souls"
+    ["La Forge des Âmes"] = {
+        "Bronjahm", "Dévoreur d'âmes"
     },
-    ["Pit of Saron"] = {
-        "Forgemaster Garfrost", "Ick & Krick", "Scourgelord Tyrannus"
+    ["La fosse de Saron"] = {
+        "Maître-forge Gargel", "Ick et Krick", "Seigneur du fléau Tyrannus"
     },
-    ["Halls of Reflection"] = {
-        "Falric", "Marwyn", "Escape from Arthas"
+    ["Les salles des Reflets"] = {
+        "Falric", "Marwyn", "Fuite d'Arthas"
     }
 }
 

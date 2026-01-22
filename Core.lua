@@ -351,7 +351,7 @@ local function UpdateBossList()
             label:SetPoint("TOPLEFT", content, "TOPLEFT", 0, 0)
             table.insert(bossLabels, label)
         end
-        bossLabels[1]:SetText("Pas dans une instance connue")
+        bossLabels[1]:SetText("Pas dans une instance.")
         bossLabels[1]:SetTextColor(1, 1, 1)
         bossLabels[1]:Show()
         return

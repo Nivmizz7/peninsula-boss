@@ -154,46 +154,46 @@ local bossData = {
     -- ==================
     -- Naxxramas
     ["Naxxramas"] = {
-        "Anub'Rekhan", "Grand Widow Faerlina", "Maexxna",
-        "Noth the Plaguebringer", "Heigan the Unclean", "Loatheb",
-        "Instructor Razuvious", "Gothik the Harvester", "The Four Horsemen",
-        "Patchwerk", "Grobbulus", "Gluth", "Thaddius",
-        "Sapphiron", "Kel'Thuzad"
+        "Anub'Rekhan", "Grande veuve Faerlina", "Maexxna",
+        "Noth le Porte-peste", "Heigan l'Impur", "Horreb",
+        "Instructeur Razuvious", "Gothik le Moissonneur", "Les Quatre Cavaliers",
+        "Recousu", "Grobbulus", "Gluth", "Thaddius",
+        "Saphiron", "Kel'Thuzad"
     },
     -- Ulduar
     ["Ulduar"] = {
-        "Flame Leviathan", "Ignis the Furnace Master", "Razorscale", "XT-002 Deconstructor",
-        "The Assembly of Iron", "Kologarn", "Auriaya", "Hodir", "Thorim", "Freya", "Mimiron",
-        "General Vezax", "Yogg-Saron", "Algalon the Observer"
+        "Léviathan des flammes", "Ignis le maître de la Fournaise", "Tranchécaille", "Déconstructeur XT-002",
+        "L'Assemblée du Fer", "Kologarn", "Auriaya", "Hodir", "Thorim", "Freya", "Mimiron",
+        "Général Vezax", "Yogg-Saron", "Algalon l'Observateur"
     },
     -- Trial of the Crusader
-    ["Trial of the Crusader"] = {
-        "The Beasts of Northrend", "Lord Jaraxxus", "Faction Champions",
-        "Twin Val'kyr", "Anub'arak"
+    ["L'épreuve du croisé"] = {
+        "Les bêtes du Norfendre", "Seigneur Jaraxxus", "Champions de faction",
+        "Val'kyrs jumelles", "Anub'arak"
     },
     -- Icecrown Citadel
-    ["Icecrown Citadel"] = {
-        "Lord Marrowgar", "Lady Deathwhisper", "Gunship Battle", "Deathbringer Saurfang",
-        "Festergut", "Rotface", "Professor Putricide",
-        "Blood Prince Council", "Blood-Queen Lana'thel", "Valithria Dreamwalker", "Sindragosa",
-        "The Lich King"
+    ["La Citadelle de la Couronne de glace"] = {
+        "Seigneur Gargamoelle", "Dame Murmemort", "Combat de canonnière", "Porte-mort Saurfang",
+        "Pulentraille", "Trognepus", "Professeur Putricide",
+        "Conseil des princes du sang", "Reine de sang Lana'thel", "Valithria Marcherêve", "Sindragosa",
+        "Le Roi-liche"
     },
     -- Ruby Sanctum
-    ["The Ruby Sanctum"] = {
+    ["Le sanctum Rubis"] = {
         "Halion"
     },
     -- Obsidian Sanctum
-    ["The Obsidian Sanctum"] = {
+    ["Le sanctum Obsidien"] = {
         "Sartharion"
     },
     -- Eye of Eternity
-    ["The Eye of Eternity"] = {
+    ["L'Œil de l'éternité"] = {
         "Malygos"
     },
     -- Vault of Archavon
-    ["Vault of Archavon"] = {
-        "Archavon the Stone Watcher", "Emalon the Storm Watcher",
-        "Koralon the Flame Watcher", "Toravon the Ice Watcher"
+    ["Caveau d'Archavon"] = {
+        "Archavon le Gardien des pierres", "Emalon le Gardien des tempêtes",
+        "Koralon le Gardien des flammes", "Toravon le Gardien des glaces"
     },
     
     -- ==================

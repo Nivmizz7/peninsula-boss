@@ -36,4 +36,15 @@ frame:SetScript("OnDragStop", function(self)
     self:StopMovingOrSizing()
 end)
 
+-- Function to get current instance
+local function GetCurrentInstance()
+    local inInstance, instanceType = IsInInstance()
+    if not inInstance then
+        return nil
+    end
+    
+    local name = GetInstanceInfo()
+    return name, instanceType
+end
+
 frame:Show()

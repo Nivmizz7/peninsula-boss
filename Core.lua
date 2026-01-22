@@ -1,8 +1,157 @@
 -- Peninsula Boss Addon
 local addonName, addonTable = ...
 
--- Boss database for WotLK instances
+-- Boss database for Vanilla, TBC and WotLK instances
 local bossData = {
+    -- ==================
+    -- VANILLA RAIDS
+    -- ==================
+    ["Molten Core"] = {
+        "Lucifron", "Magmadar", "Gehennas", "Garr", "Shazzrah", "Baron Geddon",
+        "Sulfuron Harbinger", "Golemagg the Incinerator", "Majordomo Executus", "Ragnaros"
+    },
+    ["Blackwing Lair"] = {
+        "Razorgore the Untamed", "Vaelastrasz the Corrupt", "Broodlord Lashlayer",
+        "Firemaw", "Ebonroc", "Flamegor", "Chromaggus", "Nefarian"
+    },
+    ["Ruins of Ahn'Qiraj"] = {
+        "Kurinnaxx", "General Rajaxx", "Moam", "Buru the Gorger", "Ayamiss the Hunter", "Ossirian the Unscarred"
+    },
+    ["Temple of Ahn'Qiraj"] = {
+        "The Prophet Skeram", "Silithid Royalty", "Battleguard Sartura", "Fankriss the Unyielding",
+        "Viscidus", "Princess Huhuran", "Twin Emperors", "Ouro", "C'Thun"
+    },
+    ["Zul'Gurub"] = {
+        "High Priestess Jeklik", "High Priest Venoxis", "High Priestess Mar'li", "Bloodlord Mandokir",
+        "Gri'lek", "Hazza'rah", "Renataki", "Wushoolay", "Gahz'ranka",
+        "High Priest Thekal", "High Priestess Arlokk", "Jin'do the Hexxer", "Hakkar"
+    },
+    ["Onyxia's Lair"] = {
+        "Onyxia"
+    },
+    
+    -- ==================
+    -- VANILLA DUNGEONS
+    -- ==================
+    ["Stratholme"] = {
+        "The Unforgiven", "Hearthsinger Forresten", "Timmy the Cruel", "Commander Malor",
+        "Willey Hopebreaker", "Instructor Galford", "Balnazzar", "Baroness Anastari",
+        "Nerub'enkan", "Maleki the Pallid", "Magistrate Barthilas", "Ramstein the Gorger",
+        "Baron Rivendare"
+    },
+    ["Scholomance"] = {
+        "Kirtonos the Herald", "Jandice Barov", "Rattlegore", "Marduk Blackpool",
+        "Vectus", "Ras Frostwhisper", "Instructor Malicia", "Doctor Theolen Krastinov",
+        "Lorekeeper Polkelt", "The Ravenian", "Lord Alexei Barov", "Lady Illucia Barov", "Darkmaster Gandling"
+    },
+    ["Blackrock Depths"] = {
+        "Lord Roccor", "High Interrogator Gerstahn", "Houndmaster Grebmar", "Ring of Law",
+        "Pyromancer Loregrain", "Lord Incendius", "Fineous Darkvire", "Bael'Gar",
+        "General Angerforge", "Golem Lord Argelmach", "Hurley Blackbreath", "Phalanx",
+        "Plugger Spazzring", "Ambassador Flamelash", "The Seven", "Magmus", "Emperor Dagran Thaurissan"
+    },
+    ["Blackrock Spire"] = {
+        "Highlord Omokk", "Shadow Hunter Vosh'gajin", "War Master Voone", "Mother Smolderweb",
+        "Urok Doomhowl", "Quartermaster Zigris", "Halycon", "Gizrul the Slavener",
+        "Overlord Wyrmthalak", "Pyroguard Emberseer", "Solakar Flamewreath", "Jed Runewatcher",
+        "Goraluk Anvilcrack", "Warchief Rend Blackhand", "Gyth", "The Beast", "General Drakkisath"
+    },
+    ["Dire Maul"] = {
+        "Zevrim Thornhoof", "Hydrospawn", "Lethtendris", "Alzzin the Wildshaper",
+        "Tendris Warpwood", "Illyanna Ravenoak", "Magister Kalendris", "Immol'thar",
+        "Prince Tortheldrin", "Guard Mol'dar", "Stomper Kreeg", "Guard Fengus",
+        "Guard Slip'kik", "Captain Kromcrush", "Cho'Rush the Observer", "King Gordok"
+    },
+    
+    -- ==================
+    -- THE BURNING CRUSADE RAIDS
+    -- ==================
+    ["Karazhan"] = {
+        "Attumen the Huntsman", "Moroes", "Maiden of Virtue", "Opera Event", "The Curator",
+        "Shade of Aran", "Terestian Illhoof", "Netherspite", "Chess Event", "Prince Malchezaar", "Nightbane"
+    },
+    ["Gruul's Lair"] = {
+        "High King Maulgar", "Gruul the Dragonkiller"
+    },
+    ["Magtheridon's Lair"] = {
+        "Magtheridon"
+    },
+    ["Serpentshrine Cavern"] = {
+        "Hydross the Unstable", "The Lurker Below", "Leotheras the Blind",
+        "Fathom-Lord Karathress", "Morogrim Tidewalker", "Lady Vashj"
+    },
+    ["Tempest Keep"] = {
+        "Al'ar", "Void Reaver", "High Astromancer Solarian", "Kael'thas Sunstrider"
+    },
+    ["Battle for Mount Hyjal"] = {
+        "Rage Winterchill", "Anetheron", "Kaz'rogal", "Azgalor", "Archimonde"
+    },
+    ["Black Temple"] = {
+        "High Warlord Naj'entus", "Supremus", "Shade of Akama", "Teron Gorefiend",
+        "Gurtogg Bloodboil", "Reliquary of Souls", "Mother Shahraz", "The Illidari Council", "Illidan Stormrage"
+    },
+    ["Zul'Aman"] = {
+        "Nalorakk", "Akil'zon", "Jan'alai", "Halazzi", "Hex Lord Malacrass", "Zul'jin"
+    },
+    ["Sunwell Plateau"] = {
+        "Kalecgos", "Brutallus", "Felmyst", "The Eredar Twins", "M'uru", "Kil'jaeden"
+    },
+    
+    -- ==================
+    -- THE BURNING CRUSADE DUNGEONS
+    -- ==================
+    ["Hellfire Ramparts"] = {
+        "Watchkeeper Gargolmar", "Omor the Unscarred", "Vazruden & Nazan"
+    },
+    ["The Blood Furnace"] = {
+        "The Maker", "Broggok", "Keli'dan the Breaker"
+    },
+    ["The Slave Pens"] = {
+        "Mennu the Betrayer", "Rokmar the Crackler", "Quagmirran"
+    },
+    ["The Underbog"] = {
+        "Hungarfen", "Ghaz'an", "Swamplord Musel'ek", "The Black Stalker"
+    },
+    ["Mana-Tombs"] = {
+        "Pandemonius", "Tavarok", "Nexus-Prince Shaffar", "Yor"
+    },
+    ["Auchenai Crypts"] = {
+        "Shirrak the Dead Watcher", "Exarch Maladaar"
+    },
+    ["Sethekk Halls"] = {
+        "Darkweaver Syth", "Anzu", "Talon King Ikiss"
+    },
+    ["Shadow Labyrinth"] = {
+        "Ambassador Hellmaw", "Blackheart the Inciter", "Grandmaster Vorpil", "Murmur"
+    },
+    ["The Shattered Halls"] = {
+        "Grand Warlock Nethekurse", "Blood Guard Porung", "Warbringer O'mrogg", "Warchief Kargath Bladefist"
+    },
+    ["The Steamvault"] = {
+        "Hydromancer Thespia", "Mekgineer Steamrigger", "Warlord Kalithresh"
+    },
+    ["The Botanica"] = {
+        "Commander Sarannis", "High Botanist Freywinn", "Thorngrin the Tender", "Laj", "Warp Splinter"
+    },
+    ["The Mechanar"] = {
+        "Gatewatcher Gyro-Kill", "Gatewatcher Iron-Hand", "Mechano-Lord Capacitus", "Nethermancer Sepethrea", "Pathaleon the Calculator"
+    },
+    ["The Arcatraz"] = {
+        "Zereketh the Unbound", "Dalliah the Doomsayer", "Wrath-Scryer Soccothrates", "Harbinger Skyriss"
+    },
+    ["Old Hillsbrad Foothills"] = {
+        "Lieutenant Drake", "Captain Skarloc", "Epoch Hunter"
+    },
+    ["The Black Morass"] = {
+        "Chrono Lord Deja", "Temporus", "Aeonus"
+    },
+    ["Magisters' Terrace"] = {
+        "Selin Fireheart", "Vexallus", "Priestess Delrissa", "Kael'thas Sunstrider"
+    },
+    
+    -- ==================
+    -- WRATH OF THE LICH KING RAIDS
+    -- ==================
     -- Naxxramas
     ["Naxxramas"] = {
         "Anub'Rekhan", "Grand Widow Faerlina", "Maexxna",
@@ -46,7 +195,10 @@ local bossData = {
         "Archavon the Stone Watcher", "Emalon the Storm Watcher",
         "Koralon the Flame Watcher", "Toravon the Ice Watcher"
     },
-    -- 5-man dungeons
+    
+    -- ==================
+    -- WRATH OF THE LICH KING DUNGEONS
+    -- ==================
     ["Utgarde Keep"] = {
         "Prince Keleseth", "Skarvald & Dalronn", "Ingvar the Plunderer"
     },

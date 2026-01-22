@@ -143,4 +143,67 @@ local function GetCurrentInstance()
     return name, instanceType
 end
 
+-- Create scroll frame for boss list
+local scrollFrame = CreateFrame("ScrollFrame", nil, frame, "UIPanelScrollFrameTemplate")
+scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 15, -45)
+scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -30, 15)
+
+local content = CreateFrame("Frame", nil, scrollFrame)
+content:SetSize(165, 1)
+scrollFrame:SetScrollChild(content)
+
+-- Store boss text labels
+local bossLabels = {}
+
+-- Function to update boss list
+local function UpdateBossList()
+    -- Clear previous labels
+    for _, label in ipairs(bossLabels) do
+        label:Hide()
+        label:SetText("")
+    end
+    
+    local instanceName = GetCurrentInstance()
+    if not instanceName or not bossData[instanceName] then
+        -- No instance or no data
+        if #bossLabels == 0 then
+            local label = content:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+            label:SetPoint("TOPLEFT", content, "TOPLEFT", 0, 0)
+            table.insert(bossLabels, label)
+        end
+        bossLabels[1]:SetText("Not in a known instance")
+        bossLabels[1]:Show()
+        return
+    end
+    
+    local bosses = bossData[instanceName]
+    local yOffset = 0
+    
+    for i, bossName in ipairs(bosses) do
+        if not bossLabels[i] then
+            local label = content:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+            label:SetPoint("TOPLEFT", content, "TOPLEFT", 0, -yOffset)
+            table.insert(bossLabels, label)
+        else
+            bossLabels[i]:SetPoint("TOPLEFT", content, "TOPLEFT", 0, -yOffset)
+        end
+        
+        bossLabels[i]:SetText(i .. ". " .. bossName)
+        bossLabels[i]:Show()
+        yOffset = yOffset + 15
+    end
+    
+    content:SetHeight(math.max(yOffset, 1))
+end
+
+-- Update on zone change
+frame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
+frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+frame:SetScript("OnEvent", function(self, event)
+    UpdateBossList()
+end)
+
+-- Initial update
+UpdateBossList()
+
 frame:Show()

@@ -67,34 +67,34 @@ local bossData = {
     -- THE BURNING CRUSADE RAIDS
     -- ==================
     ["Karazhan"] = {
-        "Attumen the Huntsman", "Moroes", "Maiden of Virtue", "Opera Event", "The Curator",
-        "Shade of Aran", "Terestian Illhoof", "Netherspite", "Chess Event", "Prince Malchezaar", "Nightbane"
+        "Attumen le Veneur", "Moroes", "Damoiselle de vertu", "Evénement de l'Opéra", "Le Conservateur",
+        "Ombre d'Aran", "Terestian Malsabot", "Gangr'esprit", "Evénement des échecs", "Prince Malchezaar", "Plaie-Nocturne"
     },
-    ["Gruul's Lair"] = {
-        "High King Maulgar", "Gruul the Dragonkiller"
+    ["Repaire de Gruul"] = {
+        "Haut Roi Maulgar", "Gruul le Tue-dragon"
     },
-    ["Magtheridon's Lair"] = {
+    ["Repaire de Magtheridon"] = {
         "Magtheridon"
     },
-    ["Serpentshrine Cavern"] = {
-        "Hydross the Unstable", "The Lurker Below", "Leotheras the Blind",
-        "Fathom-Lord Karathress", "Morogrim Tidewalker", "Lady Vashj"
+    ["Caverne du sanctuaire du Serpent"] = {
+        "Hydross l'Instable", "Lurker d'en-bas", "Leotheras l'Aveugle",
+        "Seigneur des fonds Karathress", "Morogrim Marcheur-des-flots", "Dame Vashj"
     },
-    ["Tempest Keep"] = {
-        "Al'ar", "Void Reaver", "High Astromancer Solarian", "Kael'thas Sunstrider"
+    ["Donjon de la Tempête"] = {
+        "Al'ar", "Saccageur du Vide", "Grande astromancienne Solarian", "Kael'thas Haut-soleil"
     },
-    ["Battle for Mount Hyjal"] = {
-        "Rage Winterchill", "Anetheron", "Kaz'rogal", "Azgalor", "Archimonde"
+    ["Sommet d'Hyjal"] = {
+        "Rage Froidhiver", "Anetheron", "Kaz'rogal", "Azgalor", "Archimonde"
     },
-    ["Black Temple"] = {
-        "High Warlord Naj'entus", "Supremus", "Shade of Akama", "Teron Gorefiend",
-        "Gurtogg Bloodboil", "Reliquary of Souls", "Mother Shahraz", "The Illidari Council", "Illidan Stormrage"
+    ["Temple Noir"] = {
+        "Seigneur de guerre Naj'entus", "Supremus", "Ombre d'Akama", "Teron Fielsang",
+        "Gurtogg Fièvresang", "Reliquaire des âmes", "Mère Shahraz", "Conseil illidari", "Illidan Hurlorage"
     },
     ["Zul'Aman"] = {
-        "Nalorakk", "Akil'zon", "Jan'alai", "Halazzi", "Hex Lord Malacrass", "Zul'jin"
+        "Nalorakk", "Akil'zon", "Jan'alai", "Halazzi", "Seigneur des maléfices Malacrass", "Zul'jin"
     },
-    ["Sunwell Plateau"] = {
-        "Kalecgos", "Brutallus", "Felmyst", "The Eredar Twins", "M'uru", "Kil'jaeden"
+    ["Plateau du Puits de soleil"] = {
+        "Kalecgos", "Brutallus", "Gangrébru", "Jumelles érédars", "M'uru", "Kil'jaeden"
     },
     
     -- ==================

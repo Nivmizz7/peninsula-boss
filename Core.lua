@@ -6,27 +6,27 @@ local bossData = {
     -- ==================
     -- VANILLA RAIDS
     -- ==================
-    ["Molten Core"] = {
+    ["Cœur du Magma"] = {
         "Lucifron", "Magmadar", "Gehennas", "Garr", "Shazzrah", "Baron Geddon",
-        "Sulfuron Harbinger", "Golemagg the Incinerator", "Majordomo Executus", "Ragnaros"
+        "Messager de Sulfuron", "Golemagg l'Incinérateur", "Chambellan Executus", "Ragnaros"
     },
-    ["Blackwing Lair"] = {
-        "Razorgore the Untamed", "Vaelastrasz the Corrupt", "Broodlord Lashlayer",
-        "Firemaw", "Ebonroc", "Flamegor", "Chromaggus", "Nefarian"
+    ["Repaire de l'Aile noire"] = {
+        "Tranchetripe l'Indompté", "Vaelastrasz le Corrompu", "Seigneur des Couvées Lashlayer",
+        "Gueule-de-feu", "Rochébène", "Flamegor", "Chromaggus", "Nefarian"
     },
-    ["Ruins of Ahn'Qiraj"] = {
-        "Kurinnaxx", "General Rajaxx", "Moam", "Buru the Gorger", "Ayamiss the Hunter", "Ossirian the Unscarred"
+    ["Ruines d'Ahn'Qiraj"] = {
+        "Kurinnaxx", "Général Rajaxx", "Moam", "Buru Brise-os", "Ayamiss le Chasseur", "Ossirian l'Inaltéré"
     },
-    ["Temple of Ahn'Qiraj"] = {
-        "The Prophet Skeram", "Silithid Royalty", "Battleguard Sartura", "Fankriss the Unyielding",
-        "Viscidus", "Princess Huhuran", "Twin Emperors", "Ouro", "C'Thun"
+    ["Temple d'Ahn'Qiraj"] = {
+        "Le Prophète Skeram", "Royauté silithide", "Garde de combat Sartura", "Fankriss l'Inflexible",
+        "Viscidus", "Princesse Huhuran", "Empereurs jumeaux", "Ouro", "C'Thun"
     },
     ["Zul'Gurub"] = {
-        "High Priestess Jeklik", "High Priest Venoxis", "High Priestess Mar'li", "Bloodlord Mandokir",
+        "Grande prêtresse Jeklik", "Grand prêtre Venoxis", "Grande prêtresse Mar'li", "Seigneur sanglant Mandokir",
         "Gri'lek", "Hazza'rah", "Renataki", "Wushoolay", "Gahz'ranka",
-        "High Priest Thekal", "High Priestess Arlokk", "Jin'do the Hexxer", "Hakkar"
+        "Grand prêtre Thekal", "Grande prêtresse Arlokk", "Jin'do le Malsort", "Hakkar"
     },
-    ["Onyxia's Lair"] = {
+    ["Repaire d'Onyxia"] = {
         "Onyxia"
     },
     

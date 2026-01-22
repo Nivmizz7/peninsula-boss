@@ -18,6 +18,13 @@ local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 title:SetPoint("TOP", frame, "TOP", 0, -15)
 title:SetText("Peninsula Boss")
 
+-- Create close button
+local closeButton = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
+closeButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -5, -5)
+closeButton:SetScript("OnClick", function()
+    frame:Hide()
+end)
+
 -- Make frame movable
 frame:SetMovable(true)
 frame:EnableMouse(true)

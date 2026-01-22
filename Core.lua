@@ -34,33 +34,33 @@ local bossData = {
     -- VANILLA DUNGEONS
     -- ==================
     ["Stratholme"] = {
-        "The Unforgiven", "Hearthsinger Forresten", "Timmy the Cruel", "Commander Malor",
-        "Willey Hopebreaker", "Instructor Galford", "Balnazzar", "Baroness Anastari",
-        "Nerub'enkan", "Maleki the Pallid", "Magistrate Barthilas", "Ramstein the Gorger",
-        "Baron Rivendare"
+        "L'Impitoyable", "Hearthsinger Forresten", "Timmy le Cruel", "Commandant Malor",
+        "Willey Hopebreaker", "Instructeur Galford", "Balnazzar", "Baronne Anastari",
+        "Nerub'enkan", "Maleki le Blafard", "Magistrat Barthilas", "Ramstein le Dévoreur",
+        "Baron Vaillefendre"
     },
     ["Scholomance"] = {
-        "Kirtonos the Herald", "Jandice Barov", "Rattlegore", "Marduk Blackpool",
-        "Vectus", "Ras Frostwhisper", "Instructor Malicia", "Doctor Theolen Krastinov",
-        "Lorekeeper Polkelt", "The Ravenian", "Lord Alexei Barov", "Lady Illucia Barov", "Darkmaster Gandling"
+        "Kirtonos le Héraut", "Jandice Barov", "Cliquettripes", "Marduk Blackpool",
+        "Vectus", "Ras Murmegivre", "Instructeur Malicia", "Docteur Theolen Krastinov",
+        "Gardien du savoir Polkelt", "Le Plamortin", "Seigneur Alexei Barov", "Dame Illucia Barov", "Sombre Maître Gandling"
     },
-    ["Blackrock Depths"] = {
-        "Lord Roccor", "High Interrogator Gerstahn", "Houndmaster Grebmar", "Ring of Law",
-        "Pyromancer Loregrain", "Lord Incendius", "Fineous Darkvire", "Bael'Gar",
-        "General Angerforge", "Golem Lord Argelmach", "Hurley Blackbreath", "Phalanx",
-        "Plugger Spazzring", "Ambassador Flamelash", "The Seven", "Magmus", "Emperor Dagran Thaurissan"
+    ["Profondeurs de Blackrock"] = {
+        "Seigneur Roccor", "Grand Inquisiteur Gerstahn", "Maître-chien Grebmar", "Cercle de la Loi",
+        "Pyromancien Loregrain", "Seigneur Incendius", "Fineous Sombrevire", "Bael'Gar",
+        "Général Forgehargne", "Seigneur golem Argelmach", "Hurley Souffle-noire", "Phalanx",
+        "Plugger Spazzring", "Ambassadeur Flamelash", "Les Sept", "Magmus", "Empereur Dagran Thaurissan"
     },
-    ["Blackrock Spire"] = {
-        "Highlord Omokk", "Shadow Hunter Vosh'gajin", "War Master Voone", "Mother Smolderweb",
-        "Urok Doomhowl", "Quartermaster Zigris", "Halycon", "Gizrul the Slavener",
-        "Overlord Wyrmthalak", "Pyroguard Emberseer", "Solakar Flamewreath", "Jed Runewatcher",
-        "Goraluk Anvilcrack", "Warchief Rend Blackhand", "Gyth", "The Beast", "General Drakkisath"
+    ["Pic Blackrock"] = {
+        "Seigneur Omokk", "Chasseur des ombres Vosh'gajin", "Maître de guerre Voone", "Mère Smolderweb",
+        "Urok Doomhowl", "Intendant Zigris", "Halycon", "Gizrul l'Asservisseur",
+        "Seigneur Wyrmthalak", "Pyroguard Braise-oracle", "Solakar Couronne-de-flammes", "Jed Runewatcher",
+        "Goraluk Anvilcrack", "Chef de guerre Rend Blackhand", "Gyth", "La Bête", "Général Drakkisath"
     },
-    ["Dire Maul"] = {
-        "Zevrim Thornhoof", "Hydrospawn", "Lethtendris", "Alzzin the Wildshaper",
-        "Tendris Warpwood", "Illyanna Ravenoak", "Magister Kalendris", "Immol'thar",
-        "Prince Tortheldrin", "Guard Mol'dar", "Stomper Kreeg", "Guard Fengus",
-        "Guard Slip'kik", "Captain Kromcrush", "Cho'Rush the Observer", "King Gordok"
+    ["Hache-tripes"] = {
+        "Zevrim Sabot-de-ronce", "Hydrospawn", "Lethtendris", "Alzzin le Modeleur",
+        "Tendris Crochebois", "Illyanna Ravenoak", "Magistère Kalendris", "Immol'thar",
+        "Prince Tortheldrin", "Garde Mol'dar", "Stomper Kreeg", "Garde Fengus",
+        "Garde Slip'kik", "Capitaine Kromcrush", "Cho'Rush l'Observateur", "Roi Gordok"
     },
     
     -- ==================

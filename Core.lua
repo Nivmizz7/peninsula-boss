@@ -249,6 +249,30 @@ local bossData = {
     }
 }
 
+-- Initialize saved variables
+PeninsulaBossDB = PeninsulaBossDB or {}
+
+-- Function to get boss kill key
+local function GetBossKey(instanceName, bossName)
+    return instanceName .. ":" .. bossName
+end
+
+-- Function to check if boss is killed
+local function IsBossKilled(instanceName, bossName)
+    local key = GetBossKey(instanceName, bossName)
+    return PeninsulaBossDB[key] == true
+end
+
+-- Function to toggle boss kill status
+local function ToggleBossKilled(instanceName, bossName)
+    local key = GetBossKey(instanceName, bossName)
+    if PeninsulaBossDB[key] then
+        PeninsulaBossDB[key] = nil
+    else
+        PeninsulaBossDB[key] = true
+    end
+end
+
 -- Create main frame
 local frame = CreateFrame("Frame", "PeninsulaBossFrame", UIParent)
 frame:SetSize(200, 300)
@@ -306,6 +330,7 @@ scrollFrame:SetScrollChild(content)
 
 -- Store boss text labels
 local bossLabels = {}
+local bossButtons = {}
 
 -- Function to update boss list
 local function UpdateBossList()
@@ -313,6 +338,9 @@ local function UpdateBossList()
     for _, label in ipairs(bossLabels) do
         label:Hide()
         label:SetText("")
+    end
+    for _, btn in ipairs(bossButtons) do
+        btn:Hide()
     end
     
     local instanceName = GetCurrentInstance()
@@ -323,7 +351,8 @@ local function UpdateBossList()
             label:SetPoint("TOPLEFT", content, "TOPLEFT", 0, 0)
             table.insert(bossLabels, label)
         end
-        bossLabels[1]:SetText("Not in a known instance")
+        bossLabels[1]:SetText("Pas dans une instance connue")
+        bossLabels[1]:SetTextColor(1, 1, 1)
         bossLabels[1]:Show()
         return
     end
@@ -332,16 +361,47 @@ local function UpdateBossList()
     local yOffset = 0
     
     for i, bossName in ipairs(bosses) do
-        if not bossLabels[i] then
-            local label = content:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-            label:SetPoint("TOPLEFT", content, "TOPLEFT", 0, -yOffset)
-            table.insert(bossLabels, label)
-        else
-            bossLabels[i]:SetPoint("TOPLEFT", content, "TOPLEFT", 0, -yOffset)
+        -- Create button if needed
+        if not bossButtons[i] then
+            local btn = CreateFrame("Button", nil, content)
+            btn:SetSize(165, 15)
+            table.insert(bossButtons, btn)
+            
+            local label = btn:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+            label:SetPoint("LEFT", btn, "LEFT", 0, 0)
+            btn.label = label
+            
+            btn:SetScript("OnClick", function(self)
+                ToggleBossKilled(instanceName, self.bossName)
+                UpdateBossList()
+            end)
+            btn:SetScript("OnEnter", function(self)
+                self.label:SetTextColor(1, 1, 0)
+            end)
+            btn:SetScript("OnLeave", function(self)
+                if IsBossKilled(instanceName, self.bossName) then
+                    self.label:SetTextColor(1, 0, 0)
+                else
+                    self.label:SetTextColor(1, 1, 1)
+                end
+            end)
         end
         
-        bossLabels[i]:SetText(i .. ". " .. bossName)
-        bossLabels[i]:Show()
+        local btn = bossButtons[i]
+        btn:SetPoint("TOPLEFT", content, "TOPLEFT", 0, -yOffset)
+        btn.bossName = bossName
+        
+        -- Check if boss is killed
+        local isKilled = IsBossKilled(instanceName, bossName)
+        if isKilled then
+            btn.label:SetText(i .. ". " .. bossName)
+            btn.label:SetTextColor(1, 0, 0) -- Red
+        else
+            btn.label:SetText(i .. ". " .. bossName)
+            btn.label:SetTextColor(1, 1, 1) -- White
+        end
+        
+        btn:Show()
         yOffset = yOffset + 15
     end
     

@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: Peninsula Boss
+## Notes: Displays raid and dungeon bosses for the current instance
+## Author: Eliot
+## Version: 1.0
+## SavedVariables: PeninsulaBossDB
+
+Core.lua

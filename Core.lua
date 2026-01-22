@@ -18,4 +18,15 @@ local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 title:SetPoint("TOP", frame, "TOP", 0, -15)
 title:SetText("Peninsula Boss")
 
+-- Make frame movable
+frame:SetMovable(true)
+frame:EnableMouse(true)
+frame:RegisterForDrag("LeftButton")
+frame:SetScript("OnDragStart", function(self)
+    self:StartMoving()
+end)
+frame:SetScript("OnDragStop", function(self)
+    self:StopMovingOrSizing()
+end)
+
 frame:Show()
